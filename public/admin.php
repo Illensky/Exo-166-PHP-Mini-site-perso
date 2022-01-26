@@ -10,16 +10,24 @@ $messageArray = json_decode($jsonMessage);
 $message = $messageArray[0];
 $username = $messageArray[1];
 ?>
-<div>
-    <h3>Username :</h3>
+<section>
     <div>
-        <?= $username ?>
+        <h2>Username :</h2>
+        <p>
+            <?= $username ?>
+        </p>
     </div>
-    <h3>Message :</h3>
+</section>
+<section>
     <div>
-        <?= $message ?>
+        <h2>Message :</h2>
+        <p>
+            <?= $message ?>
+        </p>
     </div>
-</div>
+</section>
+
+
 <?php
 
 getPart('footer');

@@ -8,39 +8,86 @@
 html {
 	font-size:62.5%;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+
 body {
+	font-family: 'Nunito', sans-serif;
+	color: gray;
+}
+
+h1, a {
+	font-family: 'Qwitcher Grypen', sans-serif;
 	text-align: center;
-	font-family: Calibri, serif;
-	background: lightblue;
+	font-size: 5rem;
 }
-header, footer {
-	margin: 0;
-	padding: 0;
-	background: cyan;
+
+a:visited, a {
+	font-size: 3rem;
+	text-decoration: none;
+	color: gray;
 }
-footer {
-	position: absolute;
-	top: 750px;
-	width: 100%;
+
+a:hover {
+	text-decoration: underline 2px gray;
 }
+
+section {
+	display: flex;
+	background-color: #f8f8f8;
+	margin: 2rem;
+	padding: 1rem 2rem;
+	border-left: 5px solid #afdbcb;
+}
+
+section div {
+	padding: 1rem;
+}
+
+p {
+	display: inline-block;
+	text-align: justify;
+}
+
+#right {
+	border-left: none;
+	border-right: 5px solid #afdbcb;
+	justify-content: right;
+}
+
+#right div {
+	text-align: right;
+	max-width: 100%;
+}
+
+#experiences {
+	flex-direction: column;
+}
+
+label {
+	display: block;
+}
+
+form {
+	margin-left: 10%;
+}
+
 ul {
 	display: flex;
 	list-style-type: none;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: flex-end;
 }
 
-a {
-	text-decoration: none;
+li {
+	padding: 3px;
+	margin-right: 1%;
+	background-color: #cecece;
+	border-radius: 10px;
 }
-section, form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-section h1 {
-	margin: 8px;
+
+header {
+	background-color: #d9d9d9;
 }
 
 .feedback-message {
@@ -55,4 +102,20 @@ section h1 {
 	color: white;
 	font-weight: bold;
 	background: indianred;
+}
+
+/* Animation*/
+
+.typing_animation {
+    display: inline-block;
+    width: 100%;
+    animation: typing 1s steps(200) 200ms;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
 }

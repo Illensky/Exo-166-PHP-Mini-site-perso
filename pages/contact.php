@@ -16,7 +16,10 @@ $message = $errorCodeArray[(int)$_GET['f']];
 }
 ?>
 <section>
-    <h1>Contact</h1>
+    <div>
+        <h1 class="typing_animation">Contact</h1>
+    </div>
+
 
     <form action="/save.php" method="post" id="contact-form">
         <div>
