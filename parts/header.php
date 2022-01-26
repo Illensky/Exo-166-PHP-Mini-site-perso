@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <title>Jane Doe</title>
-        <link rel="stylesheet" href="../public/style.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
     </head>
     <body>
         <header>

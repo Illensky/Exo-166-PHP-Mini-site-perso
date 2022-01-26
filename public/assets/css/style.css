@@ -29,9 +29,7 @@ ul {
 	justify-content: space-around;
 	align-items: center;
 }
-li {
-	margin-right: 18px;
-}
+
 a {
 	text-decoration: none;
 }
@@ -43,4 +41,18 @@ section, form {
 }
 section h1 {
 	margin: 8px;
+}
+
+.feedback-message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+	background: indianred;
 }

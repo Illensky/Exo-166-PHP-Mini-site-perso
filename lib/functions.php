@@ -13,6 +13,7 @@ function getContent() {
 	elseif(isset($_GET['page']) && $_GET['page'] == "bio") {
 
         include __DIR__.'/../pages/bio.php';
+        getUserData();
     }
 	elseif(isset($_GET['page']) && $_GET['page'] == "contact") {
 
@@ -24,3 +25,20 @@ function getPart($name) {
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
 
+function getUserData () {
+    $userDataStr = file_get_contents('../data/user.json');
+    $userData = json_decode($userDataStr);
+    foreach ($userData as $key => $data) {
+        if (is_array($data)) {
+            foreach ($data as $arrayKey => $arrayData) {
+                echo "Experience ".($arrayKey +1)."<br>";
+                foreach ($arrayData as $experienceKey => $experience) {
+                    echo $experienceKey." => ".$experience."<br>";
+                }
+            }
+        }
+        else {
+            echo $key." => ".$data."<br>";
+        }
+    }
+}
