@@ -79,6 +79,18 @@ ul {
 	justify-content: flex-end;
 }
 
+input[type="submit"]{
+	border: none;
+	background-color: #f8f8f8;
+	color: #afdbcb;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	font-size: 35px;
+	text-decoration: underline;
+}
+
 li {
 	padding: 3px;
 	margin-right: 1%;
@@ -101,9 +113,15 @@ header {
 	width: 100%;
 	color: white;
 	font-weight: bold;
+}
+
+.feedback-error {
 	background: indianred;
 }
 
+.feedback-success {
+	background: green;
+}
 /* Animation*/
 
 .typing_animation {

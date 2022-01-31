@@ -1,0 +1,16 @@
+{
+  "admin": [
+    "admin",
+    "admin"
+  ],
+  "users": [
+    [
+      "alex",
+      "$2y$10$Dl5JopYIMmuc7kO72on6L.Q4JhRGbK\/lZFFz4DVSZi9KC965zX5n."
+    ],
+    [
+      "alex",
+      "$2y$10$SzvDZZ6Ohb3e5U3dZ77B1e\/0qYgdDpoa0BdUTnoiQ0g.jTXeQ1MeO"
+    ]
+  ]
+}
