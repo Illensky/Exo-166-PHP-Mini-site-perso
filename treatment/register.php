@@ -6,6 +6,16 @@ if (!isset($_POST['register-submit'], $_POST['password'], $_POST['username'], $_
     exit();
 }
 
+// check the password conformity (should contain at least 1 lowercase, 1 uppercase, 1 number, 1 special char in the limit of 8-15 chars
+$uppercase = preg_match('@[A-Z]@', $_POST['password']);
+$lowercase = preg_match('@[a-z]@', $_POST['password']);
+$number    = preg_match('@[0-9]@', $_POST['password']);
+
+if(!$uppercase || !$lowercase || !$number) {
+    header('location: /?page=login&f=2');
+    exit();
+}
+
 // Check the password length
 if (strlen($_POST['password']) > 10 || strlen($_POST['password']) < 2) {
     header('location: /?page=login&f=2');
@@ -17,7 +27,7 @@ if ($_POST['password'] !== $_POST['password-repeat']) {
     header('location: /?page=login&f=3');
 }
 
-// Sanitaze username and hash password for register in DB (here it's a JSON file)
+// Sanitize username and hash password for register in DB (here it's a JSON file)
 $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
 

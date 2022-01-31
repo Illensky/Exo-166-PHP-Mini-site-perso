@@ -87,7 +87,6 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover {
-	font-size: 35px;
 	text-decoration: underline;
 }
 
@@ -121,6 +120,20 @@ header {
 
 .feedback-success {
 	background: green;
+}
+
+#to-register {
+	color: #afdbcb;
+	cursor: pointer;
+}
+
+#to-register:hover {
+	transform: scale(1.2);
+	text-decoration: underline;
+}
+
+#register {
+	display: none;
 }
 /* Animation*/
 

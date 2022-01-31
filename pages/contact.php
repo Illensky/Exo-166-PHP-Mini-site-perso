@@ -30,7 +30,7 @@ if ($_GET['f'] !== "0") {
 <p>Leave your message bellow ;)</p>
     <form action="/?page=save" method="post" id="contact-form">
         <div>
-            <label for="id-username">Nom d'utilisateur</label>
+            <label for="id-username">Username</label>
             <input type="text" name="username" id="id-username" required minlength="1" maxlength="20">
         </div>
         <div>
