@@ -1,8 +1,4 @@
 <?php
-if (isset($_GET['d']) && $_GET['d'] === '1') {
-    session_destroy();
-}
-
 $feedbackClass = "feedback-success";
 $errorCodeArray = [
     "You are connected",

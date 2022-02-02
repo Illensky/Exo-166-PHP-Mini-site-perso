@@ -9,7 +9,6 @@ if (isset($_POST['delete'],$_GET['m'])) {
 }
 foreach ($messages as $key => $message) {
     ?>
-
     <section>
         <div>
             <h2>Username :</h2>

@@ -22,7 +22,6 @@ if (strlen($username) > 20 || strlen($username) < 1) {
 // Get the message list
 $messageListJson = file_get_contents('../data/messages.json');
 $messageList = json_decode($messageListJson, true);
-
 // add the current message to the list
 $messageList[] = [$username,$message];
 
